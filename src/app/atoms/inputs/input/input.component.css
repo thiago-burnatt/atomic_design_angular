@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+input {
+  padding: 3px;
+}
+
+input:focus {
+  border: none;
+}

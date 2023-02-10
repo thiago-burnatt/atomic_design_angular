@@ -1,0 +1,18 @@
+<div *ngIf="dataForm">
+  <app-show-field
+  fieldName="Nome"
+  [fieldContent]="dataForm.name">
+</app-show-field>
+<app-show-field
+  fieldName="Sobrenome"
+  [fieldContent]="dataForm.lastname">
+</app-show-field>
+<app-show-field
+  fieldName="Ano de nascimento"
+  [fieldContent]="dataForm.yearOfBirth">
+</app-show-field>
+<app-show-field
+  fieldName="Data de expiração"
+  [fieldContent]="dataForm.expireDate">
+</app-show-field>
+</div>

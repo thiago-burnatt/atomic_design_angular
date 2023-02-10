@@ -1,0 +1,9 @@
+<div>
+  <label [for]="inputName">{{ labelName }}</label>
+  <input
+    [formControl]="control"
+    [type]="inputType"
+    [id]="inputID"
+    [name]="inputName"
+    [(ngModel)]="value"> <!--Recebe o values do arquivo .ts-->
+</div>

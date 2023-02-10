@@ -1,0 +1,54 @@
+<div>
+  <form [formGroup]="formData" (ngSubmit)="onSubmit(formData)">
+    <app-input
+      [control]="formData.get('name')"
+      inputID="name"
+      inputName="name"
+      inputType="text"
+      labelName="Nome"
+      formControlName="name"
+      >
+    </app-input>
+    <app-input
+      [control]="formData.get('lastname')"
+      inputID="lastname"
+      inputName="lastname"
+      inputType="text"
+      labelName="Sobrenome">
+    </app-input>
+    <app-input
+      [control]="formData.get('password')"
+      inputID="password"
+      inputName="password"
+      inputType="password"
+      labelName="Senha">
+    </app-input>
+    <app-input
+      [control]="formData.get('yearOfBirth')"
+      inputID="yearOfBirth"
+      inputName="yearOfBirth"
+      inputType="number"
+      labelName="Ano de nascimento">
+    </app-input>
+    <app-input
+      [control]="formData.get('expireDate')"
+      inputID="expireDate"
+      inputName="expireDate"
+      inputType="date"
+      labelName="Data de expiração">
+    </app-input>
+    <div class="btn-class">
+      <app-generic-btn
+      class="cancel-btn"
+      btnName="Cancelar"
+      type="reset"
+    ></app-generic-btn>
+    <app-generic-btn
+      [disabled]="!formData.valid"
+      class="confirm-btn"
+      btnName="Confirmar"
+      type="submit"
+    ></app-generic-btn>
+    </div>
+  </form>
+</div>
